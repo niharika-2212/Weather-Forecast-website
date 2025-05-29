@@ -1,0 +1,78 @@
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.one{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 48px;
+  color: #3674B5;
+}
+
+.subtitle{
+  font-size: 16px;
+  color: #585858;
+  margin-bottom: 20px;
+}
+
+.get-started{
+  background-color: #3674B5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.get-started:hover{
+  cursor: pointer;
+  background-color: #585858;
+}
+
+.two{
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  /* align-items: center; */
+}
+
+.about-card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.about-heading{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-text{
+  font-size: 14px;
+  color: #585858;
+}
+
+.about-icons{
+  width: 22px;
+  height: 22px;
+  fill: #3674B5;
+}

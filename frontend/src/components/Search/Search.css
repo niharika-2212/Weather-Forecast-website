@@ -1,0 +1,176 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+
+.main-card {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+  border-radius: 10px;
+}
+
+.result-location {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3674B5;
+}
+
+.result-summary {
+  display: flex;
+  gap: 10px;
+}
+
+.cloud-icon {
+  height: 50px;
+  fill: #3674B5;
+  width: 50px;
+}
+
+.result-temp {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.result-weather {
+  font-size: 16px;
+  color: #585858;
+}
+
+.info-line {
+  display: flex;
+  gap: 10px;
+
+}
+
+.info-box {
+  background-color: #A1E3F9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.left-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.top-card {
+  display: flex;
+  gap: 20px;
+  min-width: 800px;
+}
+
+.right-card {
+  background-color: #D1F8EF;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%
+}
+
+.hourly {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hourly-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hour{
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.days{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.day-card{
+  background-color: #D1F8EF;
+  padding: 15px 35px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.cloud-color{
+  fill: #3674B5;
+  height: 20px;
+  width: 20px;
+}
+
+.day, .min{
+  font-size: 14px;
+}
+
+.max{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.value{
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.hour-temp{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+}
+
+.labely{
+  font-size: 14px;
+  text-anchor: middle;
+  fill: #3674B5;
+}
+
+.axis{
+  font-size: 14px;
+}
+
+.labelx{
+  font-size: 14px;
+  fill: #3674B5;
+}
+
+.tooltip{
+  color: #3674B5;
+}

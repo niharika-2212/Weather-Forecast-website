@@ -1,0 +1,44 @@
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3674B5;
+  padding: 40px 50px;
+  color: white;
+}
+
+.headings{
+  font-weight: bold;
+  padding: 0 0  20px 0;
+  font-size: 18px;
+}
+
+.text{
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
+.copyright{
+  font-size: 14px;
+}
+
+.icon-footer{
+  height: 20px;
+  width: 20px;
+}
+
+.icons-main{
+  display: flex;
+  gap: 20px;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+}
+
+.links{
+  cursor: pointer;
+}
+.credit{
+  color: white;
+}
