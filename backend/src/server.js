@@ -104,34 +104,6 @@ app.get("/search", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch weather data" });
   }
 });
-/*
-const resend = new Resend(process.env.RESENDKEY); 
-app.post("/send-email", async (req,res) =>{
-  const {name, email, message} = req.body;
-  try {
-    const response = await resend.emails.send({
-      from: email, // Use a verified domain email
-      to: ['onboarding@resend.dev'], // Change to recipient email
-      subject: `Contact message from ${name}`,
-      text: message,
-    });
-
-    res.status(200).json({ message: "Email sent successfully!" });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to send email" });
-  }
-})*/
-
-/*
-const transporter = nodemailer.createTransport({
-  service: "smtp.gmail.com",
-  secure: true,
-  port: 587,
-  auth: {
-    user: process.env.EMAIL, // Your email (abc@gmail.com)
-    pass: process.env.EMAIL_PASS, // App password
-  },
-});*/
 
 app.post("/send-email", async (req, res) => {
   const transporter = nodemailer.createTransport({
@@ -153,39 +125,7 @@ app.post("/send-email", async (req, res) => {
       console.log("Server is ready to take our messages");
     }
   });
-  /*
-
-  const { name, email, message } = req.body;
-
-  const mailOptions = {
-    from: email,
-    to: testAccount.user, // The email that receives messages (abc@gmail.com)
-    subject: `New Contact Form Submission from ${name}`,
-    text: `Name: ${name}\nEmail: ${email}\n\nMessage:-\n${message}`,
-  };
-  //   let info = await transporter.sendMail({
-  //     from: '"Test Weather App" <test@weatherapp.com>',
-  //     to: "receiver@example.com",
-  //     subject: "Test Contact Message",
-  //     text: "This is a test message."
-  // });
-
-  // console.log("Test email sent:", nodemailer.getTestMessageUrl(info));
-
-  try {
-    const info = transporter.sendMail(mailOptions, function (error, response) {
-      if (error) {
-        console.log(error);
-      } else {
-        res.status(200).json({ message: "Email sent successfully!" });
-      }
-      console.log("Test email sent:", nodemailer.getTestMessageUrl(info));
-    });
-  } catch (error) {
-    console.error("Error sending email:", error);
-    res.status(500).json({ error: "Failed to send email" });
-  }
-    */
+  
 });
 
 app.listen(port, () => {
