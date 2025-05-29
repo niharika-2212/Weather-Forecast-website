@@ -49,3 +49,6 @@ Open your browser and go to: http://localhost:5173
 
 ## Acknowledgements
 Thanks to [WeatherAPI.com](https://www.weatherapi.com/) for providing free weather data.
+
+## Author
+Niharika Manhar
