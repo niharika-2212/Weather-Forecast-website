@@ -5,13 +5,14 @@
   justify-content: center;
   gap: 30px;
   margin: 50px 0;
+  padding: 0 20px;
 }
 
 .header-contact{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 600px;
+  max-width: 600px;
   align-items: center;
   text-align: center;
 }
@@ -28,18 +29,27 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px){
+  .heading1{
+    font-size: 32px;
+  }
+}
+
 .contact-form{
   background-color: white;
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 500px;
+  min-width: 200px;
+  width: 80%;
 }
 
 .form{
   display: flex;
   flex-direction: column;
   gap: 7px;
-  width: 500px;
+  
 }
 
 .input-form{

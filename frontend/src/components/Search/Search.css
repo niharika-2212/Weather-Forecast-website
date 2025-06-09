@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 50px 0;
+  padding: 20px;
 }
 
 
@@ -14,6 +15,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 800px;
+  min-width: 300px;
+  width: 80%;
   /* align-items: center; */
   gap: 30px;
   border-radius: 10px;
@@ -74,17 +78,21 @@
 .top-card {
   display: flex;
   gap: 20px;
-  min-width: 800px;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* min-width: 800px; */
+  width: 100%;
 }
 
 .right-card {
   background-color: #D1F8EF;
   border-radius: 10px;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%
+  width: 100%;
 }
 
 .hourly {
@@ -107,13 +115,15 @@
 .bottom-card{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .days{
   display: flex;
   gap: 20px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .day-card{
@@ -173,4 +183,10 @@
 
 .tooltip{
   color: #3674B5;
+}
+
+@media(max-width: 768px){
+  .top-card{
+    flex-direction: column;
+  }
 }

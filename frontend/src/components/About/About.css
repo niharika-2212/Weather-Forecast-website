@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 50px;
   margin: 50px 0;
+  padding: 0px 20px;
 }
 
 .one{
@@ -19,12 +20,22 @@
   font-weight: bold;
   font-size: 48px;
   color: #3674B5;
+  text-align: center;
 }
 
 .subtitle{
   font-size: 16px;
   color: #585858;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  .title{
+  font-size: 32px;
+}
+
+
 }
 
 .get-started{
@@ -44,9 +55,11 @@
 
 .two{
   display: flex;
-  width: 1000px;
-  justify-content: space-between;
+  /* width: 1000px; */
+  justify-content: center;
+  gap: 10px;
   box-sizing: border-box;
+  flex-wrap: wrap;
   /* align-items: center; */
 }
 

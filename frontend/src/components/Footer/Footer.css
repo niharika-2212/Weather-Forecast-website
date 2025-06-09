@@ -4,11 +4,13 @@
   background-color: #3674B5;
   padding: 40px 50px;
   color: white;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .headings{
   font-weight: bold;
-  padding: 0 0  20px 0;
+  padding: 0 0  10px 0;
   font-size: 18px;
 }
 
